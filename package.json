@@ -7,7 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "lint-staged:eslint": "eslint --cache --fix --ext .js,.jsx,.ts,tsx",
+    "lint-staged:prettier": "prettier -c --write"
   },
   "husky": {
     "hooks": {
@@ -36,5 +38,13 @@
     "lint-staged": "^12.4.1",
     "prettier": "2.6.2"
   },
-  "private": true
+  "private": true,
+  "lint-staged": {
+    "*/.{js,jsx,ts,tsx,scss,md,json}": [
+      "npm run lint-staged:prettier"
+    ],
+    "*/.{js,jsx,ts,tsx}": [
+      "npm run lint-staged:eslint"
+    ]
+  }
 }
