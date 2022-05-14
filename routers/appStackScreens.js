@@ -1,7 +1,7 @@
 // components
 import SignIn from "./screens/SignIn";
 // others
-import CONSTANTS from "../contants";
+import CONSTANTS from "../constants";
 
 const { SIGN_IN } = CONSTANTS.SCREEN_NAMES;
 
