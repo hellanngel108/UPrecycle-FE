@@ -1,9 +1,14 @@
-import { Text, View } from "react-native";
+// libs
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { NavigationContainer } from "@react-navigation/native";
+import AppNavigator from "./routers/navigators/AppNavigator";
 
 const App = () => (
-  <View>
-    <Text>Open up App start n your app!</Text>
-  </View>
+  <SafeAreaProvider>
+    <NavigationContainer>
+      <AppNavigator />
+    </NavigationContainer>
+  </SafeAreaProvider>
 );
 
 export default App;
