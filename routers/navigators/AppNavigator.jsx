@@ -1,7 +1,7 @@
 // libs
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // others
-import CONSTANTS from "../../contants";
+import CONSTANTS from "../../constants";
 import appStackScreens from "../appStackScreens";
 
 const Stack = createNativeStackNavigator();
